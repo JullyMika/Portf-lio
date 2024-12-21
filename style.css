@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Galindo&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+
+body{
+    background-color: black !important;
+}
+
+.navbar-brand img{
+    margin-left: 90px;
+}
+
+.roxo{ 
+    background-color: #300440;
+}
+
+.links {
+    margin-left: 770px;
+    list-style: none;
+    gap: 10px;
+}
+
+.links li{
+    position: relative;
+}
+
+.links a{
+    text-decoration: none;
+    position: relative;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.links a:hover{
+    color: #ffff;
+}
+
+.links a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: #BB00FF;
+    transition: width 0.3s ease;
+}
+
+.links a:hover::before{
+    width: 100%;
+}
+
+.links a::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #BB00FF;
+    transition: width 0,3s ease;
+}
+
+.links a:hover::after{
+    width: 100%;
+    transition: .5s;
+}
+/* 
+
+.links .nav-link{
+    color: white;
+} */
+
+
+.gatinho{
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #300440;
+}
+
+.principal{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 50px;
+    margin-top: 10%;
+}
+
+.texto{
+    color: #ffffff;
+    font-family: "Inknut Antiqua", sans-serif;
+}
+
+.nome{
+    font-family: "Galindo", sans-serif;
+    color: #BB00FF;
+}
